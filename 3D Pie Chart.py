@@ -24,7 +24,7 @@ explode = [0.1] + [0.0] * (len(majors) - 1)
 colors = plt.cm.Paired(np.linspace(0, 1, len(majors)))
 
 # Wedge properties
-wp = {'linewidth': 1, 'edgecolor': "green"}
+wp = {'linewidth': 1, 'edgecolor': "White"}
 
 # Creating autocpt arguments
 def func(pct, allvalues):
@@ -41,7 +41,7 @@ wedges, texts, autotexts = ax.pie(graduates,
                                   colors=colors,
                                   startangle=90,
                                   wedgeprops=wp,
-                                  textprops=dict(color="magenta"))
+                                  textprops=dict(color="Black"))
 
 # Adding legend
 ax.legend(wedges, majors,
@@ -54,5 +54,3 @@ ax.set_title("Top 6 College Majors by Number of Graduates")
 
 # Show Plot
 plt.show()
-
-print("Carlos Vejar")
